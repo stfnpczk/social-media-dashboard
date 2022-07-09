@@ -21,7 +21,7 @@ main {
 
   &__heading {
     font-size: 24px;
-    font-weight: 700;
+    // font-weight: 700;
     line-height: 29px;
     color: var(--text-primary);
   }
@@ -148,32 +148,65 @@ main {
       color: var(--text-secondary);
     }
   }
+}
+
+/*----------------------------
+      overview section 
+----------------------------*/
+.overview {
+  margin: 46px 0 45px;
+
+  &__heading {
+    font-size: 24px;
+    // font-weight: 700;
+    line-height: 29px;
+    color: var(--text-secondary);
+    margin: 0 0 27px;
+  }
+
+  &__container {
+    display: grid;
+    gap: 16px;
+  }
+
+  &__item {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: auto auto;
+    background: var(--card-bg);
+    border-radius: 5px;
+    padding: 27px 24px 29px;
+    gap: 23px;
+  }
+
+  &__label {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    color: var(--text-secondary);
+  }
+
+  &__icon-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__number {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    color: var(--text-primary);
+  }
 
   &__change {
+    align-self: center;
+    color: $lime-green;
     font-size: 12px;
     font-weight: 700;
     line-height: 15px;
-    color: $lime-green;
-  }
-
-  &__change--down {
-    color: $bright-red;
   }
 }
 
-.sm__change--up::before {
-  position: relative;
-  content: url(../images/icon-up.svg);
-  top: -3px;
-  right: 4px;
-}
-
-.sm__change--down::before {
-  position: relative;
-  content: url(../images/icon-down.svg);
-  top: -2px;
-  right: 4px;
-}
 /*----------------------------
       footer section 
 ----------------------------*/

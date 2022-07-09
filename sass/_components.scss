@@ -1,1 +1,30 @@
 // reusable components
+.sm-icon {
+  width: 20px;
+  height: auto;
+}
+
+.change {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  color: $lime-green;
+}
+
+.change--down {
+  color: $bright-red;
+}
+
+.change--up::before {
+  position: relative;
+  content: url(../images/icon-up.svg);
+  top: -3px;
+  right: 4px;
+}
+
+.change--down::before {
+  position: relative;
+  content: url(../images/icon-down.svg);
+  top: -2px;
+  right: 4px;
+}
