@@ -4,19 +4,34 @@
 
 main {
   margin: 0 24px 0;
+  
+  @media only screen and (min-width: $tablet) {
+    margin: 0 64px 0;
+  }
 }
 /*----------------------------
       header section
 ----------------------------*/
 .header {
   margin: 36px 0 40px; //- 24px padding
+  margin: 36px 0 40px; //- 24px padding
   // background: var(--top-bg);
   // border-radius: 0px 0px 20px 20px;
   // margin: 0 25px 0;
 
+  @media only screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+
   &__container {
     margin: 0 25px 0;
     border-bottom: 1px solid hsla(323685230, 19%, 60%, 1);
+
+    @media only screen and (min-width: $tablet) {
+      border: none;
+      margin: 0 64px 0;
+    }
   }
 
   &__heading {
@@ -39,6 +54,12 @@ main {
     justify-content: space-between;
     align-items: center;
     margin: 16px 25px 0;
+
+    @media only screen and (min-width: $tablet) {
+      margin: 0 64px; //padding?
+      align-self: baseline;
+      gap: 13px;
+    }
   }
 
   &__label--dark {
@@ -83,6 +104,10 @@ main {
   display: grid;
   flex-direction: column;
   gap: 24px;
+
+  @media only screen and (min-width: $tablet) {
+    grid-template-columns: 1fr 1fr;
+  }
 
   &__container {
     background: var(--card-bg);
@@ -167,6 +192,11 @@ main {
   &__container {
     display: grid;
     gap: 16px;
+
+    @media only screen and (min-width: $tablet) {
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
   }
 
   &__item {
