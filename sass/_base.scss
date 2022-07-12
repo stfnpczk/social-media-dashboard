@@ -13,13 +13,13 @@
 
 /* Dark theme */
 
-:root[color-mode="dark"] {
+:root[color-theme="dark"] {
   --body-bg: hsl(230, 17%, 14%);
   --top-bg: hsl(232, 19%, 15%);
   --card-bg: hsl(228, 28%, 20%);
-  --text-primary: hsl(228, 34%, 66%);
-  --text-secondary: hsl(0, 0%, 100%);
-  --toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+  --text-primary: hsl(0, 0%, 100%);
+  --text-secondary: hsl(228, 34%, 66%);
+  --toggle: linear-gradient(225deg, #40DB82 0%, #388FE7 98.02%) ;
 }
 
 $lime-green: hsl(163, 72%, 41%);

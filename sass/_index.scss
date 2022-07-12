@@ -9,6 +9,10 @@ main {
     margin: 0 clamp(64px, 11.5vw, 165px) 0;
   }
 }
+
+body {
+  background: var(--body-bg);
+}
 /*----------------------------
       header section
 ----------------------------*/
@@ -73,7 +77,8 @@ main {
     align-items: center;
     justify-content: flex-end;
     border-radius: 12px;
-    background: hsla(230, 22%, 74%, 1);
+    // background: hsla(230, 22%, 74%, 1);
+    background: var(--toggle);
     width: 48px;
     height: 24px;
     padding: 0 4px;
@@ -190,7 +195,7 @@ main {
     font-size: 24px;
     // font-weight: 700;
     line-height: 29px;
-    color: var(--text-secondary);
+    color: var(--text-primary);
     margin: 0 0 27px;
   }
 
