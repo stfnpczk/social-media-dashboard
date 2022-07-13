@@ -4,7 +4,7 @@
 
 main {
   margin: 0 24px 0;
-  
+
   @media only screen and (min-width: $tablet) {
     margin: 0 clamp(64px, 11.5vw, 165px) 0;
   }
@@ -12,6 +12,7 @@ main {
 
 body {
   background: var(--body-bg);
+  transition: all 0.5s ease;
 }
 /*----------------------------
       header section
@@ -36,7 +37,6 @@ body {
       border: none;
       margin: 0 clamp(64px, 11.5vw, 165px) 0;
     }
-    
   }
 
   &__heading {
@@ -73,25 +73,40 @@ body {
   }
 
   &__toggle {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    // display: flex;
+    // align-items: center;
+    // justify-content: flex-end;
     border-radius: 12px;
     // background: hsla(230, 22%, 74%, 1);
     background: var(--toggle);
     width: 48px;
     height: 24px;
     padding: 0 4px;
+    // transition: ease 0.3s;
+    position: relative;
   }
 
-  &__toggle-switch {
-    width: 18px;
-    height: 18px;
-    background: var(--card-bg);
-    border-radius: 50%;
-    cursor: pointer;
-  }
+
 }
+.header__toggle::before {
+  display: block;
+  position: absolute;
+  top: 3px;
+  right: 27px;
+  content: '';
+  width: 18px;
+  height: 18px;
+  background: var(--card-bg);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s ease ;
+}
+
+.header__toggle.switch-off::before {
+  right: 3px;
+}
+
+
 
 .header::after {
   position: absolute;
