@@ -82,10 +82,13 @@ body {
     width: 48px;
     height: 24px;
     padding: 0 4px;
-    // transition: ease 0.3s;
     position: relative;
+    // transition: all 0.5s ease;
   }
 
+  // &__toggle:hover {
+  //   background: var(--toggle-hover)
+  // }
 
 }
 .header__toggle::before {
@@ -99,7 +102,7 @@ body {
   background: var(--card-bg);
   border-radius: 50%;
   cursor: pointer;
-  transition: all 0.5s ease ;
+  transition: all 0.5s ease;
 }
 
 .header__toggle.switch-off::before {
@@ -117,6 +120,10 @@ body {
   height: 235px;
   border-radius: 0 0 10px 10px;
   z-index: -1;
+
+  @media only screen and (min-width: $desktop) {
+    height: 244px;
+  }
 }
 /*----------------------------
       social-media section 
@@ -139,7 +146,15 @@ body {
     border-radius: 5px;
     text-align: center;
     padding: 32px 0 24px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    
   }
+
+  &__container:hover {
+    background: var(--card-bg-hover);
+  }
+
   &__container--fb {
     border-top: 4px solid $fb-blue;
   }
@@ -236,6 +251,12 @@ body {
     border-radius: 5px;
     padding: 27px 24px 29px;
     gap: 23px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+
+  &__item:hover {
+    background: var(--card-bg-hover);
   }
 
   &__label {
