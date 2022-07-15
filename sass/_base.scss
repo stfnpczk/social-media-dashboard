@@ -30,7 +30,7 @@ $lime-green: hsl(163, 72%, 41%);
 $bright-red: hsl(356, 69%, 56%);
 $fb-blue: hsl(208, 92%, 53%);
 $tw-blue: hsl(203, 89%, 53%);
-$insta-colors: linear-gradient(to right, #fdc468 0%, #df4996 100%);
+$insta-colors: linear-gradient(225deg, #df4896, #ee877e, #fdc366); 
 $yt-red: hsl(348, 97%, 39%);
 
 body {
@@ -51,8 +51,8 @@ h6 {
 }
 
 p {
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
 }
 
 img {
@@ -66,6 +66,5 @@ a {
   cursor: pointer;
 }
 
-$tablet: 768px;
-// $desktop: 1024px;
-$desktop: 1150px;
+$tablet: 48rem;
+$desktop: 73.125rem;
