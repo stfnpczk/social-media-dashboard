@@ -416,9 +416,25 @@ body {
   transition: all 0.5s ease;
 }
 
+body::after {
+  position: absolute;
+  content: "";
+  background: var(--top-bg);
+  top: 0;
+  width: 100%;
+  height: 14.6875rem;
+  border-radius: 0 0 0.625rem 0.625rem;
+  z-index: -1;
+}
+@media only screen and (min-width: 73.125rem) {
+  body::after {
+    height: 15.25rem;
+  }
+}
+
 .page-wrapper {
+  max-width: 450px;
   margin: 0 auto;
-  max-width: 28.125rem;
 }
 @media only screen and (min-width: 48rem) {
   .page-wrapper {
@@ -428,6 +444,7 @@ body {
 @media only screen and (min-width: 73.125rem) {
   .page-wrapper {
     max-width: 112.5rem;
+    margin: 0 auto;
   }
 }
 
@@ -435,13 +452,18 @@ body {
       header section
 ----------------------------*/
 .header {
-  margin: 2.25rem 0 2.5rem;
   margin: 2.25rem 0 3rem;
 }
 @media only screen and (min-width: 48rem) {
   .header {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
+  }
+}
+@media only screen and (min-width: 73.125rem) {
+  .header {
+    align-items: unset;
   }
 }
 .header__container {
@@ -451,7 +473,7 @@ body {
 @media only screen and (min-width: 48rem) {
   .header__container {
     border: none;
-    margin: 0 clamp(4rem, 11.5vw, 10.3125rem) 0;
+    margin-left: clamp(4rem, 11.5vw, 10.3125rem);
   }
 }
 .header__heading {
@@ -485,7 +507,7 @@ body {
 }
 @media only screen and (min-width: 48rem) {
   .header__dark-mode {
-    margin: 0 clamp(4rem, 11.5vw, 10.3125rem) 0;
+    margin-right: clamp(4rem, 11.5vw, 10.3125rem);
     gap: 0.8125rem;
   }
 }
@@ -517,27 +539,6 @@ body {
 
 .header__toggle.switch-off::before {
   right: 0.1875rem;
-}
-
-.header::after {
-  position: absolute;
-  content: "";
-  background: var(--top-bg);
-  top: 0;
-  width: 100%;
-  height: 14.6875rem;
-  border-radius: 0 0 0.625rem 0.625rem;
-  z-index: -1;
-}
-@media only screen and (min-width: 73.125rem) {
-  .header::after {
-    height: 15.25rem;
-  }
-}
-@media only screen and (min-width: 125rem) {
-  .header::after {
-    width: 125rem;
-  }
 }
 
 /*----------------------------
