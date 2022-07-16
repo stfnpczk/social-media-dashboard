@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
-/* Light Theme */
-
-:root[color-theme="light"] {
+.light-theme {
   --body-bg: hsl(0, 0%, 100%);
   --top-bg: hsl(225, 100%, 98%);
   --card-bg: hsl(227, 47%, 96%);
@@ -13,9 +11,7 @@
   --toggle-hover: linear-gradient(225deg, #40DB82 0%, #388FE7 98.02%) ;
 }
 
-/* Dark theme */
-
-:root[color-theme="dark"] {
+.dark-theme {
   --body-bg: hsl(230, 17%, 14%);
   --top-bg: hsl(232, 19%, 15%);
   --card-bg: hsl(228, 28%, 20%);

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html color-theme="dark" lang="en">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/main.css" />
     <script src="./main.js" defer></script>
   </head>
-  <body>
+  <body class="dark-theme">
     <div class="page-wrapper">
       <header class="header">
         <div class="header__container">
@@ -24,12 +24,15 @@
         </div>
         <div class="header__dark-mode">
           <p class="header__label header__label--dark">Dark Mode</p>
-          <button class="header__toggle" id="switch">
-          </button>
+          <button
+            class="header__toggle"
+            id="switch"
+            aria-label="toggle color theme switch"
+          ></button>
         </div>
       </header>
       <main>
-        <section class="sm">
+        <div class="sm">
           <div class="sm__container sm__container--fb">
             <div class="sm__handle">
               <img src="./images/icon-facebook.svg" alt="" />
@@ -77,25 +80,23 @@
             </p>
             <p class="change change--down">144 Today</p>
           </div>
-        </section>
+        </div>
         <section class="overview">
           <h2 class="overview__heading">Overview - Today</h2>
           <ul class="overview__container">
-            
             <li class="overview__item">
               <p class="overview__label">Page Views</p>
               <div class="overview__icon-container">
-                <img src="./images/icon-facebook.svg" alt="" class="sm-icon">
+                <img src="./images/icon-facebook.svg" alt="" class="sm-icon" />
               </div>
               <p class="overview__number">87</p>
               <p class="overview__change change change--up">3%</p>
             </li>
 
-
             <li class="overview__item">
               <p class="overview__label">Likes</p>
               <div class="overview__icon-container">
-                <img src="./images/icon-facebook.svg" alt="" class="sm-icon">
+                <img src="./images/icon-facebook.svg" alt="" class="sm-icon" />
               </div>
               <p class="overview__number">52</p>
               <p class="overview__change change change--down">2%</p>
@@ -104,7 +105,7 @@
             <li class="overview__item">
               <p class="overview__label">Likes</p>
               <div class="overview__icon-container">
-                <img src="./images/icon-instagram.svg" alt="" class="sm-icon">
+                <img src="./images/icon-instagram.svg" alt="" class="sm-icon" />
               </div>
               <p class="overview__number">5462</p>
               <p class="overview__change change change--up">2257%</p>
@@ -113,7 +114,7 @@
             <li class="overview__item">
               <p class="overview__label">Profile Views</p>
               <div class="overview__icon-container">
-                <img src="./images/icon-instagram.svg" alt="" class="sm-icon">
+                <img src="./images/icon-instagram.svg" alt="" class="sm-icon" />
               </div>
               <p class="overview__number">52k</p>
               <p class="overview__change change change--up">1375%</p>
@@ -122,7 +123,7 @@
             <li class="overview__item">
               <p class="overview__label">Retweets</p>
               <div class="overview__icon-container">
-                <img src="./images/icon-twitter.svg" alt="" class="sm-icon">
+                <img src="./images/icon-twitter.svg" alt="" class="sm-icon" />
               </div>
               <p class="overview__number">117</p>
               <p class="overview__change change change--up">303%</p>
@@ -131,7 +132,7 @@
             <li class="overview__item">
               <p class="overview__label">Likes</p>
               <div class="overview__icon-container">
-                <img src="./images/icon-twitter.svg" alt="" class="sm-icon">
+                <img src="./images/icon-twitter.svg" alt="" class="sm-icon" />
               </div>
               <p class="overview__number">507</p>
               <p class="overview__change change change--up">553%</p>
@@ -140,7 +141,7 @@
             <li class="overview__item">
               <p class="overview__label">Likes</p>
               <div class="overview__icon-container">
-                <img src="./images/icon-youtube.svg" alt="" class="sm-icon">
+                <img src="./images/icon-youtube.svg" alt="" class="sm-icon" />
               </div>
               <p class="overview__number">107</p>
               <p class="overview__change change change--down">19%</p>
@@ -149,7 +150,7 @@
             <li class="overview__item">
               <p class="overview__label">Total Views</p>
               <div class="overview__icon-container">
-                <img src="./images/icon-youtube.svg" alt="" class="sm-icon">
+                <img src="./images/icon-youtube.svg" alt="" class="sm-icon" />
               </div>
               <p class="overview__number">1407</p>
               <p class="overview__change change change--down">12%</p>

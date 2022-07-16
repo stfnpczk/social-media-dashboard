@@ -256,6 +256,7 @@ body {
 
     @media only screen and (min-width: $desktop) {
       grid-template-columns: 1fr 1fr 1fr 1fr;
+      margin: 0 0 80px ;
     }
   }
 
